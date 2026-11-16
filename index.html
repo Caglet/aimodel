@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>เดลเบเล้</title>
+    <meta
+      name="description"
+      content="ม็อกอัปส่วนตัวของเดลเบเล้ จากสองรูป — ทางเดินจริง และโหมดซอฟต์"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#real">ข้ามไปดูรูป</a>
+
+    <header class="top">
+      <a class="brand" href="#top">เดลเบเล้</a>
+      <nav>
+        <a href="#real">01 ทางเดิน</a>
+        <a href="#soft">02 ซอฟต์</a>
+      </nav>
+      <span class="top-meta">Mockup</span>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="หน้าแรก">
+        <div class="split">
+          <button
+            class="pane"
+            type="button"
+            data-zoom="images/hallway.jpg"
+            data-alt="เดลเบเล้เซลฟี่ในทางเดินอาคาร สวมหน้ากากสีขาว"
+            data-caption="01 · ทางเดิน"
+          >
+            <img
+              src="images/hallway.jpg"
+              alt="เดลเบเล้เซลฟี่ในทางเดินอาคาร สวมหน้ากากสีขาว"
+            />
+            <span class="pane-tag tag-real">01 · ทางเดิน</span>
+          </button>
+          <button
+            class="pane"
+            type="button"
+            data-zoom="images/soft.png"
+            data-alt="เดลเบเล้เซลฟี่ใกล้ๆ มีผีเสื้อสีชมพูและประกายบนใบหน้า"
+            data-caption="02 · ซอฟต์"
+          >
+            <img
+              src="images/soft.png"
+              alt="เดลเบเล้เซลฟี่ใกล้ๆ มีผีเสื้อสีชมพูและประกายบนใบหน้า"
+            />
+            <span class="pane-tag tag-soft">02 · ซอฟต์</span>
+          </button>
+        </div>
+
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="mast">
+          <p class="eyebrow">Personal · Two frames</p>
+          <h1>เดลเบ<span>เล้</span></h1>
+          <p class="hint">ชี้ที่รูปเพื่อขยายเฟรม · คลิกเพื่อดูเต็ม</p>
+        </div>
+      </section>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <p>
+            <span>เดลเบเล้</span><i>✦</i><span>Real</span><i>✦</i
+            ><span>ทางเดิน</span><i>✦</i><span>Soft</span><i>✦</i
+            ><span>ผีเสื้อ</span><i>✦</i><span>Two frames</span><i>✦</i>
+          </p>
+          <p>
+            <span>เดลเบเล้</span><i>✦</i><span>Real</span><i>✦</i
+            ><span>ทางเดิน</span><i>✦</i><span>Soft</span><i>✦</i
+            ><span>ผีเสื้อ</span><i>✦</i><span>Two frames</span><i>✦</i>
+          </p>
+        </div>
+      </div>
+
+      <section class="spread" id="real">
+        <div class="spread-copy reveal">
+          <p class="num">01</p>
+          <p class="eyebrow">Frame / Real</p>
+          <h2>ทางเดิน</h2>
+          <p>
+            ไฟเพดานยาว เสาขาว เก้าอี้สีน้ำเงิน
+            หน้ากากปิดครึ่งล่าง เหลือตาที่มองกล้องตรงๆ
+          </p>
+        </div>
+        <button
+          class="spread-photo reveal"
+          type="button"
+          aria-label="ดูรูปทางเดินเต็มเฟรม"
+          data-zoom="images/hallway.jpg"
+          data-alt="เดลเบเล้เซลฟี่ในทางเดินอาคาร สวมหน้ากากสีขาว"
+          data-caption="01 · ทางเดิน"
+        >
+          <img
+            src="images/hallway.jpg"
+            alt="เดลเบเล้ในทางเดิน สวมหน้ากากขาว"
+          />
+        </button>
+      </section>
+
+      <section class="spread is-paper is-flip" id="soft">
+        <button
+          class="spread-photo reveal"
+          type="button"
+          aria-label="ดูรูปซอฟต์เต็มเฟรม"
+          data-zoom="images/soft.png"
+          data-alt="เดลเบเล้เซลฟี่ใกล้ๆ มีผีเสื้อสีชมพูและประกายบนใบหน้า"
+          data-caption="02 · ซอฟต์"
+        >
+          <img
+            src="images/soft.png"
+            alt="เดลเบเล้ยิ้มในฮู้ดสีมิ้นต์ มีผีเสื้อสีชมพู"
+          />
+        </button>
+        <div class="spread-copy reveal">
+          <p class="num">02</p>
+          <p class="eyebrow soft">Frame / Soft</p>
+          <h2>ซอฟต์</h2>
+          <p>
+            ฮู้ดสีมิ้นต์ ผีเสื้อสีชมพูเกาะบนผม
+            ประกายเล็กๆ พราวทั่วแก้ม แล้วยิ้มมุมปาก
+          </p>
+        </div>
+      </section>
+
+      <section class="close" id="close">
+        <p class="eyebrow">End of reel</p>
+        <p class="giant">เดลเบเล้</p>
+        <p class="closer">ไม่มีเมนูยาวๆ<br />มีแค่ชื่อนี้ กับสองรูป</p>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <span>เดลเบเล้</span>
+      <span>สองเฟรม</span>
+      <span>2026</span>
+    </footer>
+
+    <div class="lightbox" hidden>
+      <button class="lightbox-close" type="button">ปิด</button>
+      <figure>
+        <img alt="" />
+        <figcaption></figcaption>
+      </figure>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
