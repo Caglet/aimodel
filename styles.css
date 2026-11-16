@@ -4,6 +4,7 @@
   --cream: #f6f1ea;
   --blush: #f0b7c4;
   --blush-deep: #d98aa0;
+  --gold: #f3c15a;
   --mint: #c9ddd4;
   --muted: #a39890;
   --line: rgba(246, 241, 234, 0.16);
@@ -266,8 +267,16 @@ h1 {
   text-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
 }
 
+h1.party {
+  font-family: Syne, "IBM Plex Sans Thai", sans-serif;
+  font-size: clamp(3.4rem, 8.4vw, 7.4rem);
+  font-weight: 800;
+  letter-spacing: -0.045em;
+  line-height: 0.9;
+}
+
 h1 span {
-  color: var(--blush);
+  color: var(--gold);
 }
 
 .hint {
@@ -315,6 +324,13 @@ h1 span {
   }
 }
 
+#real {
+  background:
+    radial-gradient(circle at 16% 18%, rgba(243, 193, 90, 0.2), transparent 24%),
+    radial-gradient(circle at 84% 78%, rgba(240, 183, 196, 0.16), transparent 26%),
+    var(--ink);
+}
+
 .spread {
   display: grid;
   grid-template-columns: minmax(240px, 0.78fr) minmax(280px, 1.22fr);
@@ -339,6 +355,14 @@ h1 span {
   font-weight: 500;
   line-height: 1.05;
   letter-spacing: -0.04em;
+}
+
+.spread h2.bday {
+  font-family: Syne, "IBM Plex Sans Thai", sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.4rem, 4.6vw, 4.1rem);
+  letter-spacing: -0.04em;
+  color: var(--gold);
 }
 
 .spread p {
@@ -416,10 +440,12 @@ h1 span {
 
 .giant {
   margin: 0.4rem 0 0.6rem;
-  font-size: clamp(4.2rem, 14vw, 11rem);
-  font-weight: 500;
-  line-height: 1.08;
-  letter-spacing: -0.05em;
+  font-family: Syne, "IBM Plex Sans Thai", sans-serif;
+  font-size: clamp(2.6rem, 7vw, 5.8rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  color: var(--gold);
 }
 
 .closer {
