@@ -89,7 +89,7 @@ a {
   justify-content: space-between;
   gap: 1rem;
   padding: 0 1.4rem;
-  background: rgba(12, 10, 9, 0.72);
+  background: rgba(12, 10, 9, 0.88);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--line);
   font-family: Syne, "IBM Plex Sans Thai", sans-serif;
@@ -319,7 +319,7 @@ h1 span {
   display: grid;
   grid-template-columns: minmax(240px, 0.78fr) minmax(280px, 1.22fr);
   gap: clamp(1.5rem, 4vw, 4.5rem);
-  align-items: end;
+  align-items: center;
   padding: clamp(4.5rem, 9vw, 8rem) clamp(1.25rem, 5vw, 5rem);
   scroll-margin-top: calc(var(--header) + 0.75rem);
 }
@@ -331,18 +331,6 @@ h1 span {
 
 .spread.is-flip {
   grid-template-columns: minmax(280px, 1.22fr) minmax(240px, 0.78fr);
-}
-
-.num {
-  margin: 0 0 0.8rem;
-  font-family: Syne, sans-serif;
-  font-size: clamp(4.5rem, 8vw, 7.5rem);
-  font-weight: 800;
-  line-height: 0.8;
-  letter-spacing: -0.06em;
-  color: transparent;
-  -webkit-text-stroke: 1.5px currentColor;
-  opacity: 0.28;
 }
 
 .spread h2 {
@@ -373,16 +361,16 @@ h1 span {
 
 .spread-photo img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
 #real .spread-photo img {
-  object-position: center 70%;
+  object-position: center 76%;
 }
 
 #soft .spread-photo img {
-  object-position: center 36%;
+  object-position: center 42%;
 }
 
 .spread-photo::after {
@@ -516,8 +504,14 @@ h1 span {
 }
 
 @media (max-width: 860px) {
+  .top {
+    padding: 0 0.85rem;
+    letter-spacing: 0.08em;
+    font-size: 0.7rem;
+  }
+
   .top nav {
-    gap: 0.8rem;
+    gap: 0.7rem;
   }
 
   .top-meta {
